@@ -1,0 +1,193 @@
+.todoList{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.todoListForm {    
+    display: flex;    
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+    justify-content: center;    
+    flex: 0 0 auto;
+}
+  
+/** Info de tarefas criadas e concluídas **/
+
+.tasks {
+    width: 100%;
+    max-width: 736px;
+    margin-top: 3rem;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;        
+}
+
+.info {
+    display: flex;    
+    justify-content: space-between;        
+    flex:1;
+}
+
+.div {
+    display: inline-flex;    
+    align-items: center;
+    gap: 0.5rem;
+    flex: 0 0 auto;
+  }
+  
+.textCountTasks {    
+    width: fit-content;    
+    font-weight: 700;
+    color: var(--blue);
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.textCounter {
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter", Helvetica;
+  font-weight: 700;
+  color: var(--gray-200);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.textCompletedTasks {
+  width: fit-content;  
+  font-weight: 700;
+  color: var(--purple);
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: normal;
+}
+  
+.counter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px 8px;
+    flex: 0 0 auto;
+    background-color: var(--gray-400);
+    border-radius: 999px;
+}
+  
+/** Lista de Tarefas Vazias **/
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 1.5rem;  
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-color: var(--grey-400);
+}
+
+.clipboard {  
+  width: 56px;
+  height: 56px;
+}
+
+.emptyText {
+  align-self: stretch;
+  color: var(--gray-300);
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1.4rem;
+}
+
+.emptySpan {
+  font-weight: 700;
+}
+
+.emptyTextWrapper {
+  color: var(--gray-300);
+  font-size: 1rem;
+  letter-spacing: 0;
+  line-height: 1.4rem;
+}
+
+/** Lista de Tarefas **/
+
+.list {  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;  
+}
+
+.list button {  
+  cursor:pointer;
+  background: none;
+  border: 0;
+}
+
+.taskUncheck {
+  box-shadow: 0px 2px 8px #0000000f;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-700);
+}
+
+.taskCheck {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: var(--gray-500);  
+}
+
+.imgTask {
+  width: 24px;
+  height: 24px;
+}
+
+.taskTextWrapper {
+  flex: 1;
+  margin-top: -1px;
+  color: var(--gray-100);
+  letter-spacing: 0;
+  font-size:0.875rem;
+  line-height: 1.225rem;
+}
+
+.taskTextCompletedWrapper {
+  flex: 1;
+  margin-top: -1px;
+  color: var(--gray-300);
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 1.225rem;
+  text-decoration: line-through;
+}
