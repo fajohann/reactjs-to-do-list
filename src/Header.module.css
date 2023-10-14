@@ -2,8 +2,37 @@
    width: 100%;
    background-color: var(--gray-700);
    height: 12.5rem;
-
-   display: flex;
+   display: flex;   
    align-items: center;
-   justify-content: center;    
+   justify-content: center;   
 }
+
+.logoContainer {
+   display:flex;
+   width: 7.875rem;
+   height: 3rem;
+   flex-shrink: 0;
+   align-items: center;
+   justify-content: space-between;   
+}
+
+.logo {
+   width: 1.375rem;
+   height: 2.25rem;
+   flex-shrink: 0;   
+}
+
+.header span {
+   color: var(--blue);
+   font-size: 2.5rem;
+   font-style: normal;
+   font-weight: 900;
+   line-height: normal;
+}
+
+.do {
+   color: var(--purple-dark) !important;
+}
+
+
+

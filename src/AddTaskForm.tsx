@@ -35,22 +35,23 @@ export function AddTaskForm( {addTask} : AddTaskFormProps ) {
 
     const isNewTaskEmpty = taskContent.length === 0
 
-    return (        
-        <form onSubmit={handleAddNewTask} className={styles.addTaskForm}>
-            <input 
-                type="text" 
-                placeholder="Adicione uma nova tarefa" 
-                name="task"                
-                value={taskContent}
-                onChange={handleNewTaskChange}
-                onInvalid={handleNewTaskInvalid}
-                required
-            />
-            <button 
-                type='submit' 
-                disabled={isNewTaskEmpty}>
-                Criar <img className={styles.plus} src={plus} />
-            </button>
-        </form>
+    return (
+        <div className={styles.addTaskForm}>
+            <form onSubmit={handleAddNewTask}>
+                <input 
+                    type="text" 
+                    placeholder="Adicione uma nova tarefa" 
+                    name="taskContent"                
+                    value={taskContent}
+                    onChange={handleNewTaskChange}
+                    onInvalid={handleNewTaskInvalid}
+                    required
+                />
+                <button type='submit' disabled={isNewTaskEmpty}>
+                    Criar <img className={styles.plus} src={plus} />
+                </button>
+            </form> 
+        </div>        
+        
     )
 }

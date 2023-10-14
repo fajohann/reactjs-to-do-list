@@ -1,0 +1,38 @@
+
+.empty {
+    display: flex;
+    padding: 4rem 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    border-top: 1px solid var(--gray-400);
+    width: 100%;
+    flex: 0 0 auto;  
+  }
+  
+  .clipboard {
+    width: 3.5rem;
+    height: 3.5rem;    
+  }
+  
+  .emptyText {
+    align-self: stretch;
+    color: var(--gray-300);
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 1.4rem;
+  }
+  
+  .emptySpan {
+    font-weight: 700;
+  }
+  
+  .emptyTextWrapper {
+    color: var(--gray-300);
+    font-size: 1rem;
+    letter-spacing: 0;
+    line-height: 1.4rem;
+  }

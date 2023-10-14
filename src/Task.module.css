@@ -1,3 +1,77 @@
-.task{
-    
+.taskUnchecked {
+    box-shadow: 0px 2px 8px #0000000f;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--gray-500);
+    border-radius: 8px;
+    border: 1px solid var(--gray-700);
+}
+
+.taskChecked {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--gray-500);
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: var(--gray-500);  
+}
+
+.taskChecked button, .taskUnchecked button {
+    cursor:pointer;
+    background: none;
+    border: 0;
+}
+
+.btnDeleteTask {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.3125rem 0.34513rem 0.3125rem 0.375rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;  
+    border-radius: 0.25rem;
+}
+
+.imgDeleteTask {
+    width: 0.77988rem;
+    height: 0.875rem;
+    flex-shrink: 0;
+}
+
+.imgTask {
+    width: 1.09094rem;
+    height: 1.09094rem;
+    flex-shrink: 0;  
+}
+
+.taskTextWrapper {
+    flex: 1;
+    margin-top: -1px;
+    color: var(--gray-100);
+    letter-spacing: 0;
+    font-size:0.875rem;
+    line-height: 1.225rem;
+}
+
+.taskTextCompletedWrapper {
+    flex: 1;
+    margin-top: -1px;
+    color: var(--gray-300);
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.225rem;
+    text-decoration: line-through;
 }
