@@ -1,12 +1,12 @@
 import styles from './Task.module.css'
 import { FormEvent } from 'react'
 
-import iconTaskChecked from './assets/task-checked.svg'
-import iconTaskCheckedHover from './assets/task-checked-hover.svg'
-import iconTaskUnchecked from './assets/task-unchecked.svg'
-import iconTaskUncheckedHover from './assets/task-unchecked-hover.svg'
-import iconTrash from './assets/trash.svg'
-import iconTrashHover from './assets/trash-hover.svg'
+import iconTaskChecked from '../assets/task-checked.svg'
+import iconTaskCheckedHover from '../assets/task-checked-hover.svg'
+import iconTaskUnchecked from '../assets/task-unchecked.svg'
+import iconTaskUncheckedHover from '../assets/task-unchecked-hover.svg'
+import iconTrash from '../assets/trash.svg'
+import iconTrashHover from '../assets/trash-hover.svg'
 
 export interface TaskType {
     id: string;

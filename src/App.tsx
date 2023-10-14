@@ -1,9 +1,9 @@
 import styles from './App.module.css'
 
-import { Header } from './Header';
+import { Header } from './components/Header';
 
 import './App.module.css'
-import { TodoList } from './TodoList';
+import { TodoList } from './components/TodoList';
 
 import './globals.css';
 

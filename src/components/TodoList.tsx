@@ -1,15 +1,16 @@
 import styles from './TodoList.module.css'
 import { useState } from 'react'
 
-import { AddTaskForm } from './AddTaskForm';
+import { CreateTaskForm } from './CreateTaskForm';
 import { Task,TaskType } from './Task';
 import { TodoListEmpty } from './TodoListEmpty';
+import { TodoListHeader } from './TodoListHeader';
 
 
 export function TodoList(){
 
   const [tasks, setTasks] = useState<TaskType[]>([]);
-  const addTask = (task:TaskType) => setTasks([...tasks,task]);
+  const createTask = (task:TaskType) => setTasks([...tasks,task]);
 
   const deleteTask = (taskToDelete:TaskType) => {
     console.log(`delete Task: ${taskToDelete.id}`)
@@ -30,32 +31,11 @@ export function TodoList(){
     setTasks(updatedTasks);
   }
 
-  const countCompletedTasks = tasks.reduce((count, task) => {
-    if (task.isCompleted === true) return count += 1;
-    return count
-  }, 0);
-  
     return (
         <div className={styles.todoList}>
-            <AddTaskForm addTask={addTask} />            
-            
-            <header className={styles.tasks}>
-              <div className={styles.info}>
-                <div className={styles.div}>
-                  <span className={styles.textCountTasks}>Tarefas criadas</span>
-                  <div className={styles.counter}>
-                    <span className={styles.textCounter}>{tasks.length}</span>
-                  </div>
-                </div>
-                <div className={styles.div}>
-                  <span className={styles.textCompletedTasks}>Concluídas</span>
-                  <div className={styles.counter}>
-                    <span className={styles.textCounter}>{(tasks.length === 0) ? tasks.length  : `${countCompletedTasks} de ${tasks.length}`}</span>
-                  </div>
-                </div>
-              </div>
-            </header>
-
+            <CreateTaskForm onCreateTask={createTask} />  
+            <TodoListHeader tasks={tasks} />          
+           
             <section className={styles.tasks}>
               {!tasks.length 
                 ? ( <TodoListEmpty />) 

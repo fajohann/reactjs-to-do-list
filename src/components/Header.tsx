@@ -1,5 +1,5 @@
 import styles from './Header.module.css'
-import logo from './assets/logo-rocket.svg'
+import logo from '../assets/logo-rocket.svg'
 
 export function Header() {
     return (

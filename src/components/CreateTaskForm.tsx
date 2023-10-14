@@ -1,26 +1,26 @@
 import { ChangeEvent, FormEvent, InvalidEvent, useState } from 'react'
-import styles from './AddTaskForm.module.css'
-import plus from './assets/plus.svg'
+import styles from './CreateTaskForm.module.css'
+import plus from '../assets/plus.svg'
 
 import { TaskType } from './Task';
 import { v4 } from 'uuid';
 
-interface AddTaskFormProps {
-    addTask: (task: TaskType) => void
+interface CreateTaskFormProps {
+    onCreateTask: (task: TaskType) => void
 }
 
-export function AddTaskForm( {addTask} : AddTaskFormProps ) {
+export function CreateTaskForm( {onCreateTask} : CreateTaskFormProps ) {
 
     const [taskContent,setTaskContent] = useState('')
 
-    function handleAddNewTask(event : FormEvent) {
+    function handleCreateNewTask(event : FormEvent) {
         event.preventDefault()
         const newTask:TaskType = {
             id: v4(),
             content: taskContent,
             isCompleted: false,
         };             
-        addTask(newTask)
+        onCreateTask(newTask)
         setTaskContent("")
     }
 
@@ -36,8 +36,8 @@ export function AddTaskForm( {addTask} : AddTaskFormProps ) {
     const isNewTaskEmpty = taskContent.length === 0
 
     return (
-        <div className={styles.addTaskForm}>
-            <form onSubmit={handleAddNewTask}>
+        <div className={styles.createTaskForm}>
+            <form onSubmit={handleCreateNewTask}>
                 <input 
                     type="text" 
                     placeholder="Adicione uma nova tarefa" 

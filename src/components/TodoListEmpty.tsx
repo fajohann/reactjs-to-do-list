@@ -1,5 +1,5 @@
 import styles from './TodoListEmpty.module.css'
-import iconClipboard from './assets/clipboard.png'
+import iconClipboard from '../assets/clipboard.png'
 
 export function TodoListEmpty() {
     return (

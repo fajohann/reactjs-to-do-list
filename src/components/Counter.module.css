@@ -1,0 +1,21 @@
+.counter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2px 8px;
+    flex: 0 0 auto;
+    background-color: var(--gray-400);
+    border-radius: 999px;
+}
+
+.textCounter {
+    width: fit-content;
+    color: var(--gray-200);
+    margin-top: -1px;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0;
+}

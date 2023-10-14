@@ -1,0 +1,108 @@
+
+.taskContainer {
+    display: flex;
+    width: 46rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  
+  .taskContainerInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+  }
+  
+  .taskContainerText {
+    color: var(--blue);  
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .taskContainerCounter {
+    display: flex;
+    padding: 0.125rem 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 62.4375rem;
+    background: var(--Gray-400, #333);
+  }
+  
+  .taskContainerCounterText {
+    color: var(--Gray-200, #D9D9D9);
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .tasks {
+      width: 100%;
+      max-width: 736px;
+      margin-top: 3rem;
+      display: flex; 
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .info {
+      display: flex;    
+      justify-content: space-between;        
+      flex:1;
+  }
+  
+  .div {
+      display: inline-flex;    
+      align-items: center;
+      gap: 0.5rem;
+      flex: 0 0 auto;
+    }
+    
+  .textCountTasks {    
+      width: fit-content;    
+      color: var(--blue);
+      font-size: 0.875rem;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 0;
+      line-height: normal;
+  }
+  
+  .textCounter {
+    width: fit-content;
+    color: var(--gray-200);
+    margin-top: -1px;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0;
+  }
+  
+  .textCompletedTasks {
+    width: fit-content;  
+    font-weight: 700;
+    color: var(--purple);
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0;
+  }
+    
+  .counter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 2px 8px;
+      flex: 0 0 auto;
+      background-color: var(--gray-400);
+      border-radius: 999px;
+  }
