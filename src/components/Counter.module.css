@@ -1,12 +1,12 @@
 .counter {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 2px 8px;
+    gap: 0.625rem;
+    padding: 0.125rem 0.5rem;
     flex: 0 0 auto;
     background-color: var(--gray-400);
-    border-radius: 999px;
+    border-radius: 0.5rem;
 }
 
 .textCounter {

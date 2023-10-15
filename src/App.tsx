@@ -1,11 +1,9 @@
 import styles from './App.module.css'
+import './globals.css';
 
 import { Header } from './components/Header';
-
-import './App.module.css'
 import { TodoList } from './components/TodoList';
 
-import './globals.css';
 
 function App() {
   

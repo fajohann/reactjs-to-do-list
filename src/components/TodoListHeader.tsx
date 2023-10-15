@@ -14,13 +14,13 @@ export function TodoListHeader({tasks}:TodoListHeaderProps) {
     }, 0);
 
     return(
-        <header className={styles.tasks}>
+        <header className={styles.tasksHeader}>
             <div className={styles.info}>
-                <div className={styles.div}>
+                <div className={styles.tasksCounterContainer}>
                     <span className={styles.textCountTasks}>Tarefas criadas</span>
                     <Counter content={tasks.length}/>                
                 </div>
-                <div className={styles.div}>
+                <div className={styles.tasksCounterContainer}>
                     <span className={styles.textCompletedTasks}>Concluídas</span>
                     <Counter content={(tasks.length === 0) ? tasks.length : `${countCompletedTasks} de ${tasks.length}`}/>                
                 </div>
